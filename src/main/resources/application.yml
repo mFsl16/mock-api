@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: mockApi
+  caches:
+    activemock: 
+      charset: 'UTF-8'
+datasources:
+  default:
+    url: jdbc:postgresql://192.168.49.2:32254/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 'testpassword'
+    schema-generate: NONE
+    dialect: POSTGRES
+netty:
+  default:
+    allocator:
+      max-order: 3
